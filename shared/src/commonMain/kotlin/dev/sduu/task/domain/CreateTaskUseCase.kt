@@ -1,6 +1,8 @@
 package dev.sduu.task.domain
 
-class CreateTaskUseCase() {
+import dev.sduu.task.data.TaskRepository
+
+class CreateTaskUseCase(taskRepository: TaskRepository) {
     operator fun invoke() {
         println("CreateTaskUseCase")
     }
